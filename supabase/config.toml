@@ -1,0 +1,22 @@
+project_id = "latsdkkwifrxwasjtues"
+
+[functions.analyze-menu]
+verify_jwt = false
+
+[functions.analyze-product]
+verify_jwt = false
+
+[functions.save-to-google]
+verify_jwt = false
+
+[functions.create-session]
+verify_jwt = false
+
+[functions.get-history]
+verify_jwt = false
+
+[functions.toggle-favorite]
+verify_jwt = false
+
+[functions.save-product]
+verify_jwt = false

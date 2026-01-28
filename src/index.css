@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;600;700&family=Noto+Serif+JP:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Japanese Menu Translator - Design System
+   Inspired by traditional Japanese washi paper and izakaya aesthetics
+*/
+
+@layer base {
+  :root {
+    /* Warm cream background - like traditional Japanese paper */
+    --background: 40 33% 96%;
+    --foreground: 20 10% 15%;
+
+    /* Card with subtle warmth */
+    --card: 40 40% 98%;
+    --card-foreground: 20 10% 15%;
+
+    --popover: 40 40% 98%;
+    --popover-foreground: 20 10% 15%;
+
+    /* Deep burgundy - traditional Japanese red */
+    --primary: 350 65% 35%;
+    --primary-foreground: 40 40% 98%;
+
+    /* Soft beige secondary */
+    --secondary: 35 30% 90%;
+    --secondary-foreground: 20 10% 20%;
+
+    /* Muted tones */
+    --muted: 35 20% 92%;
+    --muted-foreground: 20 10% 45%;
+
+    /* Gold accent - like traditional Japanese gold leaf */
+    --accent: 45 80% 45%;
+    --accent-foreground: 20 10% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 35 25% 85%;
+    --input: 35 25% 88%;
+    --ring: 350 65% 35%;
+
+    --radius: 0.75rem;
+
+    /* Custom colors for the app */
+    --washi: 40 33% 96%;
+    --ink: 20 10% 15%;
+    --vermillion: 350 65% 35%;
+    --gold: 45 80% 45%;
+    --bamboo: 80 25% 45%;
+    --stone: 35 10% 60%;
+
+    --sidebar-background: 40 33% 94%;
+    --sidebar-foreground: 20 10% 25%;
+    --sidebar-primary: 350 65% 35%;
+    --sidebar-primary-foreground: 40 40% 98%;
+    --sidebar-accent: 35 30% 88%;
+    --sidebar-accent-foreground: 20 10% 20%;
+    --sidebar-border: 35 25% 85%;
+    --sidebar-ring: 350 65% 35%;
+  }
+
+  .dark {
+    --background: 20 10% 10%;
+    --foreground: 40 30% 92%;
+
+    --card: 20 10% 12%;
+    --card-foreground: 40 30% 92%;
+
+    --popover: 20 10% 12%;
+    --popover-foreground: 40 30% 92%;
+
+    --primary: 350 60% 55%;
+    --primary-foreground: 20 10% 10%;
+
+    --secondary: 20 15% 18%;
+    --secondary-foreground: 40 30% 90%;
+
+    --muted: 20 15% 18%;
+    --muted-foreground: 35 15% 60%;
+
+    --accent: 45 70% 50%;
+    --accent-foreground: 20 10% 10%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 20 15% 20%;
+    --input: 20 15% 20%;
+    --ring: 350 60% 55%;
+
+    --sidebar-background: 20 10% 8%;
+    --sidebar-foreground: 40 30% 90%;
+    --sidebar-primary: 350 60% 55%;
+    --sidebar-primary-foreground: 20 10% 10%;
+    --sidebar-accent: 20 15% 15%;
+    --sidebar-accent-foreground: 40 30% 90%;
+    --sidebar-border: 20 15% 18%;
+    --sidebar-ring: 350 60% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
